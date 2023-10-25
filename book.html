@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Booking</title>
+<link rel="stylesheet" href="bookstyle.css">
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
+<script type="text/javascript">
+	function book()
+	{
+      alert("your booking has been submitted");
+      window.location.href="index.html";
+	}
+</script>
+</head>
+<body>
+
+<div class="container">
+<div class="container-time">
+<h2 class="heading">Time Open</h2>
+<h3 class="heading-days">Monday-Friday</h3>
+<p>7am - 11am (breakfast)</p>
+<p>11am - 10pm (lunch/dinner)</p>
+<h3 class="heading-days">Saturday and sunday</h3>
+<p>9am - 1am (breakfast)</p>
+<p>1am - 10pm (lunch/dinner)</p>
+<hr>
+<h4 class="heading-phone">Call Us: 0000-000-00</h4>
+</div>
+<div class="container-form">
+
+
+<form action="connect.php" method="post">
+
+<h2 class="heading heading-yellow">Appointment Booking</h2>
+<div class="form-field">
+<p>Your Name</p>
+<input type="text" placeholder="Your Name" name="name">
+</div>
+<div class="form-field">
+<p>Your email</p>
+<input type="email" placeholder="Your email" name="email">
+</div>
+<div class="form-field">
+<p>Contact no</p>
+<input type="number" placeholder="Your Contact number" name="number">
+</div>
+<div class="form-field">
+<p>Date</p>
+<input type="date"  name="date" placeholder="YYYY-MM-DD">
+</div>
+<div class="form-field">
+<p>What type of event ?</p>
+<select id="#" name="event">
+<option value="Reception">Reception</option>
+<option value="Wedding">Wedding</option>
+<option value="Birthday party">Birthday party</option>
+<option value="Official party">Official party</option>
+<option value="Music party">Music party</option>
+<option value="Conference/Meeting">Conference/Meeting</option>
+</select>
+</div>
+<hr>
+<button class="btn" onclick="book()">Book</button>
+
+</form>
+
+</div>
+</div>
+
+
+</body>
+</html>
